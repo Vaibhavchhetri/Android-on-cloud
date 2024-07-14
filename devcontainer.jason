@@ -1,0 +1,22 @@
+{
+  "name": "Android Development",
+  "image": "mcr.microsoft.com/vscode/devcontainers/java:0-11",
+  "features": {
+    "docker-in-docker": "latest"
+  },
+  "postCreateCommand": "./devcontainer/setup.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+        "esbenp.prettier-vscode",
+        "redhat.java",
+        "vscjava.vscode-gradle",
+        "vscjava.vscode-maven"
+      ]
+    }
+  },
+  "forwardPorts": [8080, 3000]
+}
